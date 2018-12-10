@@ -1,0 +1,264 @@
+
+
+<html>
+    <body>
+
+
+
+    <html lang="en">
+        <head>
+            <title>Daftar Klinik</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                * {
+                    box-sizing: border-box;
+                }
+
+                body {
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+                /* Style the header */
+                header {
+                    background-color: #666;
+                    padding: 30px;
+                    text-align: center;
+                    font-size: 35px;
+                    color: white;
+                }
+
+                /* Create two columns/boxes that floats next to each other */
+                nav {
+                    float: left;
+                    width: 30%;
+                    height: 300px; /* only for demonstration, should be removed */
+                    background: #ccc;
+                    padding: 20px;
+                }
+
+                /* Style the list inside the menu */
+                nav ul {
+                    list-style-type: none;
+                    padding: 0;
+                }
+
+                article {
+                    float: left;
+                    padding: 20px;
+                    width: 70%;
+                    background-color: #f1f1f1;
+                    height: 300px; /* only for demonstration, should be removed */
+                }
+
+                /* Clear floats after the columns */
+                section:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+
+                /* Style the footer */
+                footer {
+                    background-color: #777;
+                    padding: 10px;
+                    text-align: center;
+                    color: white;
+                }
+
+                /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+                @media (max-width: 600px) {
+                    nav, article {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            </style>
+            
+         <style>
+            body {
+                margin: 0;
+                /*font-family: Arial, Helvetica, sans-serif;*/
+                font-family: trebuchet ms;
+            }
+
+            /* Add a black background color to the top navigation */
+            .topnav {
+                overflow: hidden;
+                background-color: #00bfff;
+            }
+
+            /* Style the links inside the navigation bar */
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            /* Change the color of links on hover */
+            .topnav a:hover {
+                background-color: white;
+                color: black;
+            }
+
+            /* Add a color to the active/current link */
+            .topnav a.active {
+                /*background-color: #4CAF50;*/
+                background-color: white;
+                color: black;
+            }
+        </style>        
+        <!--css dropdown menu-->
+        <style>
+            /* Navbar container */
+            .navbar {
+                overflow: hidden;
+                background-color: #00bfff;
+                font-family: trebuchet ms;
+            }
+
+            /* Links inside the navbar */
+            .navbar a {
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                font-family: trebuchet ms;
+                /*text-decoration: none;*/
+            }
+
+            /* The dropdown container */
+            .dropdown {
+                float: left;
+                overflow: hidden;
+            }
+
+            /* Dropdown button */
+            .dropdown .dropbtn {
+                font-size: 17px; 
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: #00bfff;
+                font-family: trebuchet ms; /* Important for vertical align on mobile phones */
+                margin: 0; /* Important for vertical align on mobile phones */
+            }
+
+            /* Add a white background color to navbar links on hover */
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                color: black;
+                background-color: white;
+            }
+
+            /* Dropdown content (hidden by default) */
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #00bfff;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            /* Links inside the dropdown */
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+                background-color: white;
+            }
+
+            /* Add a blue background color to dropdown links on hover */
+            .dropdown-content a:hover {
+                background-color: #99dfff;
+            }
+
+            /* Show the dropdown menu on hover */
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+
+        
+        <header>
+
+        </header>
+         <div class="topnav">
+            <a href="Home.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Pendaftaran</button>
+                <div id="dropMenu" class="dropdown-content">
+                    <li><a href="DaftarPasien.html">Klik Untuk Daftar Pasien</a></li> 	
+      <li><a href="DaftarKlinik.html">Klik Untuk Daftar Klinik</a></li> 
+      <li><a href="daftarDokter.html">Klik Untuk Daftar Dokter</a></li>
+      <li><a href="daftarberobat.html">Klik Untuk Daftar Berobat</a></li>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Pelayanan</button>
+                <div id="dropMenu" class="dropdown-content">
+                    <li><a href="tampilDokter.html">Klik Untuk Melihat Dokter terdaftar</a></li>
+       <li><a href="tampilKlinik.html">Klik Untuk Melihat Klinik terdaftar</a></li>
+       <li><a href="tampilpasien.html">Klik Untuk Melihat Pasien terdaftar</a></li>                 
+                </div>
+            </div>
+            <a href="login.html">Login</a>
+        </div>
+
+        <section>
+            <nav>
+                <ul>
+                </ul>
+            </nav>
+
+            <article>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h1><font face="Century Gothic" color=black size="6">Form Daftar Klinik</font></h1>
+                            <form action="" id="registerForm" onsubmit="return make_json(this)" method="POST">
+                                <br>
+                                <input type="text" placeholder="ID Klinik" id="idKlinik" required>
+                                <br><br>
+                                <input type="text" placeholder="Nama Klinik" id="nama" required>
+                                <br><br>
+                                <button class="button" id="save" type="Submit" style="vertical-align:middle"><font face="Century Gothic" size="4" ><span>SIMPAN </span></font></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <p id="output"></p>
+                <script>
+                    function make_json(form) {
+                        var json = {
+                            "idKlinik": form.idKlinik.value,
+                            "nama": form.nama.value
+                        };
+                        var html = JSON.stringify(json, 0, 100);
+                        var Url = "http://202.94.83.190:8080/165314099_WebService/webresources/Klinik";
+                        var xhr = new XMLHttpRequest();
+                        xhr.open('POST', Url, false);
+                        xhr.setRequestHeader("Content-type", "application/json");
+                        xhr.send(html);
+                        alert(html);
+                        document.getElementById("output").innerHTML = "Berhasil Tambah Klinik";
+                        return false;
+                    }
+                </script>
+
+
+
+            </article>
+        </section>
+    </body>
+</html>
